@@ -1,20 +1,24 @@
-html,
-body {
+* {
   box-sizing: border-box;
+  user-select: none;
+}
+
+html,
+body,
+#root {
   margin: 0;
   padding: 0;
-}
-
-body,
-#root,
-main {
   width: 100vw;
   height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
-  max-width: 500px;
   margin: 0 auto;
+  padding: 10px;
 
   display: flex;
   flex-direction: column;
@@ -24,15 +28,45 @@ main {
   gap: 20px;
 }
 
-main input {
+main input[type="range"] {
   width: 100%;
+}
+
+main img {
+  width: 100%;
+}
+
+main input {
   margin: 0 auto;
   text-align: center;
 }
 
-main button {
+main button,
+main label {
+  display: block;
   width: 100%;
   padding: 20px 60px;
+  background-color: #444;
+  color: white;
+  border: 2px outset black;
+  text-align: center;
+  font-family: serif;
+  font-size: 1rem;
+}
+
+main button:hover,
+main label:hover {
+  cursor: pointer;
+}
+
+.select {
+  user-select: auto;
+}
+
+main img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 body {
@@ -40,10 +74,17 @@ body {
   color: white;
 }
 
-button {
-  background-color: #444;
+main a {
+  color: lightblue;
+  font-size: 1.5rem;
 }
 
-a {
-  color: lightblue;
+h1,
+h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
 }

@@ -68,8 +68,27 @@ function LoadList() {
 
   return (
     <main>
-      <h3>Upload newline separated list of Yugioh card IDs</h3>
-      <input type="file" accept=".txt" onChange={onUploadList} />
+      <h1>Yu-Gi-Oh! Card Guesser</h1>
+      <h2>by Asha20</h2>
+
+      {/* Not implemented yet */}
+      <button class="hidden">
+        Play with all cards <br /> (DB updated on: {DB_DATE})
+      </button>
+
+      <label for="file-upload" class="custom-button">
+        Upload a newline separated list of Yu-Gi-Oh card IDs
+      </label>
+      <input
+        id="file-upload"
+        class="hidden"
+        type="file"
+        onChange={onUploadList}
+      />
+
+      <em class="version">
+        Version {NPM_VERSION}, released on {RELEASE_DATE}
+      </em>
     </main>
   );
 }

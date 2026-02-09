@@ -1,7 +1,7 @@
 {
   "name": "yugioh-card-guess",
   "private": true,
-  "version": "0.0.0",
+  "version": "2",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -17,5 +17,9 @@
     "typescript": "~5.9.3",
     "vite": "^7.2.4",
     "vite-plugin-solid": "^2.11.10"
+  },
+  "meta": {
+    "dbDate": "2026-02-09",
+    "releaseDate": "2026-02-09"
   }
 }
